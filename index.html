@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KoinotMap – Koinotni his qiling</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="universe">
+
+
+        <!-- Navigatsiya -->
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <span class="logo-dot"></span>
+                Koinot<span class="logo-highlight">Map</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Asosiy</a></li>
+                <li><a href="map.html">KoinotMap</a></li>
+                <li><a href="articles.html">Maqolalar</a></li>
+                <li><a href="solar-system.html">Quyosh sistemasi</a></li>
+                <li><a href="deep-space.html">Deep Space</a></li>
+                <li><a href="about.html">Biz haqimizda</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+
+<!-- ====== 1. HERO (BIRINCHI EKRAN) ====== -->
+<section class="hero" id="hero">
+    <!-- Yulduzli fon faqat hero ichida -->
+    <canvas id="starfield"></canvas>
+    <div class="nebula-glow"></div>
+    
+    <div class="hero-content">
+        <h1 class="hero-title">
+            Koinot<span class="title-glow">.</span>
+        </h1>
+        <p class="hero-subtitle">
+            O‘z ona tilingizda. His qiling. Kezing. Kashf eting.
+        </p>
+        <a href="map.html" class="cta-button">
+            <span class="cta-icon">✦</span>
+            Koinotni kezishni boshlash
+            <span class="cta-arrow">→</span>
+        </a>
+    </div>
+    <div class="scroll-indicator">
+        <span>Pastga</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+        <!-- ====== 2. NIMA QILISH MUMKIN ====== -->
+        <section class="section" id="explore">
+            <h2 class="section-title">Nimadan boshlaymiz?</h2>
+            <div class="portal-cards">
+                <a href="solar-system.html" class="portal-card" style="--delay: 0.1s">
+                    <div class="portal-ring"></div>
+                    <div class="portal-content">
+                        <span class="portal-emoji">🪐</span>
+                        <h3>Quyosh sistemasi</h3>
+                        <p>Sayyoralar, yo‘ldoshlar, asteroidlar – uyimiz atrofi bilan tanishing.</p>
+                    </div>
+                </a>
+                <a href="deep-space.html" class="portal-card" style="--delay: 0.2s">
+                    <div class="portal-ring"></div>
+                    <div class="portal-content">
+                        <span class="portal-emoji">🌌</span>
+                        <h3>Chuqur koinot</h3>
+                        <p>Galaktikalar, tumanliklar, pulsarlar, qora tuynuklar – cheksizlik sari.</p>
+                    </div>
+                </a>
+                <a href="articles.html" class="portal-card" style="--delay: 0.3s">
+                    <div class="portal-ring"></div>
+                    <div class="portal-content">
+                        <span class="portal-emoji">📚</span>
+                        <h3>Maqolalar</h3>
+                        <p>Koinot falsafasi, texnologiya va eng so‘nggi kashfiyotlar.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ====== 3. NEGA KOINOTMAP ====== -->
+        <section class="section" id="why">
+            <h2 class="section-title">Nega aynan KoinotMap?</h2>
+            <div class="why-grid">
+                <div class="why-item reveal">
+                    <span class="why-number">01</span>
+                    <h4>O‘zbek tilida</h4>
+                    <p>Koinot haqida sifatli kontent endi ona tilimizda. Murakkab terminlarsiz, oddiy va tushunarli.</p>
+                </div>
+                <div class="why-item reveal">
+                    <span class="why-number">02</span>
+                    <h4>Interaktiv xarita</h4>
+                    <p>Faqat o‘qish emas — sichqoncha bilan koinotni kezing, masshtablang, bosing va o‘rganing.</p>
+                </div>
+                <div class="why-item reveal">
+                    <span class="why-number">03</span>
+                    <h4>Ilmiy, lekin jonli</h4>
+                    <p>Quruq faktlar emas. Har bir jism ortidagi hikoya va falsafiy kontekst bilan.</p>
+                </div>
+                <div class="why-item reveal">
+                    <span class="why-number">04</span>
+                    <h4>Doimiy yangilanadi</h4>
+                    <p>Yangi kashfiyotlar va hodisalar bilan muntazam boyitib boriladi.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== 4. FOOTER ====== -->
+        <footer class="footer">
+            <div class="footer-grid">
+                <!-- Logo + tavsif -->
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-dot"></span>
+                        Koinot<span class="logo-highlight">Map</span>
+                    </a>
+                    <p class="footer-desc">
+                        Koinotni o‘zbek tilida kezing. Interaktiv xarita, maqolalar va kashfiyotlar.
+                    </p>
+                </div>
+
+                <!-- Tezkor havolalar -->
+                <div class="footer-links">
+                    <h4>Tezkor havolalar</h4>
+                    <ul>
+                        <li><a href="map.html">KoinotMap xaritasi</a></li>
+                        <li><a href="solar-system.html">Quyosh sistemasi</a></li>
+                        <li><a href="deep-space.html">Chuqur koinot</a></li>
+                        <li><a href="articles.html">Maqolalar</a></li>
+                    </ul>
+                </div>
+
+                <!-- Sayt haqida -->
+                <div class="footer-links">
+                    <h4>Sayt</h4>
+                    <ul>
+                        <li><a href="about.html">Biz haqimizda</a></li>
+                        <li><a href="about.html#contact">Bog‘lanish</a></li>
+                        <li><a href="#">Hamkorlik</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pastki chiziq -->
+            <div class="footer-bottom">
+                <p>© 2025 KoinotMap. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

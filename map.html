@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Mobil optimizatsiya -->
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>KoinotMap – Interaktiv xarita</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/map.css">
+</head>
+
+<body class="map-page">
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="../index.html" class="logo">
+        <span class="logo-dot"></span>
+        Koinot<span class="logo-highlight">Map</span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Asosiy</a></li>
+        <li><a href="map.html" class="active">KoinotMap</a></li>
+        <li><a href="articles.html">Maqolalar</a></li>
+        <li><a href="solar-system.html">Quyosh sistemasi</a></li>
+        <li><a href="deep-space.html">Deep Space</a></li>
+        <li><a href="about.html">Biz haqimizda</a></li>
+    </ul>
+
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+<!-- 3D MAP -->
+<div class="map-wrapper" id="map3D">
+
+    <canvas id="threeCanvas"></canvas>
+
+    <!-- hint -->
+    <div class="map-hint" id="mapHint">
+        🖱 Drag → aylantirish • Scroll → zoom • Click → info
+    </div>
+
+</div>
+
+<!-- THREE.JS -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
+<!-- JS -->
+<script src="../js/script.js"></script>
+<script src="../js/map.js"></script>
+
+</body>
+</html>
